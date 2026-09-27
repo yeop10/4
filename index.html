@@ -1,0 +1,1834 @@
+
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>대구 기독병원 장례식장 | 고인의 마지막 길을 정성을 다해 모시겠습니다.</title>
+
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family:
+        "Noto Sans KR",
+        "Apple SD Gothic Neo",
+        "Malgun Gothic",
+        sans-serif;
+      color: #303832;
+      background: #f8f7f2;
+      line-height: 1.7;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    img {
+      max-width: 100%;
+      display: block;
+    }
+
+    button {
+      font-family: inherit;
+    }
+
+    /* =========================
+       HEADER
+    ========================= */
+
+    .header {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 76px;
+      background: rgba(255, 255, 255, 0.96);
+      border-bottom: 1px solid rgba(0, 0, 0, 0.06);
+      z-index: 1000;
+      backdrop-filter: blur(10px);
+    }
+
+    .header-inner {
+      max-width: 1200px;
+      height: 100%;
+      margin: 0 auto;
+      padding: 0 24px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .logo {
+      font-size: 21px;
+      font-weight: 700;
+      color: #24372d;
+      letter-spacing: -0.7px;
+    }
+
+    .logo small {
+      display: block;
+      font-size: 9px;
+      color: #9a927e;
+      font-weight: 400;
+      letter-spacing: 2px;
+      margin-top: -3px;
+    }
+
+    .nav {
+      display: flex;
+      gap: 32px;
+      align-items: center;
+    }
+
+    .nav a {
+      font-size: 14px;
+      color: #4b544e;
+      transition: 0.25s;
+    }
+
+    .nav a:hover {
+      color: #7b6b48;
+    }
+
+    /* =========================
+       HERO
+    ========================= */
+
+    .hero {
+      min-height: 680px;
+      margin-top: 76px;
+      display: flex;
+      align-items: center;
+      position: relative;
+      background-image:
+        linear-gradient(
+          90deg,
+          rgba(28, 38, 33, 0.68),
+          rgba(28, 38, 33, 0.36),
+          rgba(28, 38, 33, 0.08)
+        ),
+        url("./images/hero.jpg");
+      background-size: cover;
+      background-position: center;
+    }
+
+    .hero-inner {
+      width: 1200px;
+      max-width: calc(100% - 48px);
+      margin: 0 auto;
+      color: #fff;
+    }
+
+    .hero-sub {
+      font-size: 14px;
+      letter-spacing: 2px;
+      opacity: 0.9;
+      margin-bottom: 18px;
+    }
+
+    .hero h1 {
+      font-size: clamp(38px, 5vw, 66px);
+      line-height: 1.28;
+      font-weight: 500;
+      letter-spacing: -2.5px;
+      margin-bottom: 24px;
+    }
+
+    .hero-desc {
+      font-size: 16px;
+      line-height: 1.9;
+      opacity: 0.92;
+      margin-bottom: 34px;
+    }
+
+    .hero-buttons {
+      display: flex;
+      gap: 12px;
+      flex-wrap: wrap;
+    }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-width: 150px;
+      height: 50px;
+      padding: 0 24px;
+      border-radius: 3px;
+      font-size: 14px;
+      transition: 0.25s;
+    }
+
+    .btn-main {
+      background: #efe9d9;
+      color: #2f3c34;
+    }
+
+    .btn-main:hover {
+      background: #fff;
+    }
+
+    .btn-dark {
+      border: 1px solid rgba(255,255,255,0.65);
+      color: #fff;
+      background: rgba(255,255,255,0.08);
+    }
+
+    .btn-dark:hover {
+      background: rgba(255,255,255,0.18);
+    }
+
+    /* =========================
+       QUICK MENU
+    ========================= */
+
+    .quick-menu {
+      position: relative;
+      margin-top: -42px;
+      z-index: 5;
+    }
+
+    .quick-inner {
+      max-width: 1100px;
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      background: #fff;
+      box-shadow: 0 12px 40px rgba(34, 45, 38, 0.09);
+    }
+
+    .quick-item {
+      padding: 26px 28px;
+      border-right: 1px solid #e9e7df;
+      transition: 0.25s;
+    }
+
+    .quick-item:last-child {
+      border-right: 0;
+    }
+
+    .quick-item:hover {
+      background: #f7f5ef;
+    }
+
+    .quick-label {
+      font-size: 11px;
+      color: #a09272;
+      letter-spacing: 1.5px;
+      margin-bottom: 4px;
+    }
+
+    .quick-title {
+      font-size: 16px;
+      font-weight: 600;
+      color: #354239;
+    }
+
+    /* =========================
+       COMMON SECTION
+    ========================= */
+
+    .section {
+      padding: 110px 24px;
+    }
+
+    .section-inner {
+      max-width: 1100px;
+      margin: 0 auto;
+    }
+
+    .section-head {
+      margin-bottom: 46px;
+    }
+
+    .section-label {
+      font-size: 11px;
+      letter-spacing: 2px;
+      color: #9a8c69;
+      margin-bottom: 9px;
+      text-transform: uppercase;
+    }
+
+    .section-title {
+      font-size: 34px;
+      font-weight: 500;
+      color: #29372f;
+      letter-spacing: -1.3px;
+      margin-bottom: 12px;
+    }
+
+    .section-desc {
+      color: #777b75;
+      font-size: 14px;
+    }
+
+    /* =========================
+       SERVICES
+    ========================= */
+
+    .service-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 16px;
+    }
+
+    .service-card {
+      background: #fff;
+      border: 1px solid #e9e6dc;
+      padding: 30px 24px;
+      min-height: 190px;
+      transition: 0.25s;
+    }
+
+    .service-card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 10px 30px rgba(40, 48, 42, 0.07);
+    }
+
+    .service-number {
+      color: #a18e67;
+      font-size: 12px;
+      margin-bottom: 25px;
+    }
+
+    .service-card h3 {
+      font-size: 18px;
+      font-weight: 600;
+      margin-bottom: 9px;
+      color: #344239;
+    }
+
+    .service-card p {
+      color: #777c76;
+      font-size: 13px;
+      line-height: 1.8;
+    }
+
+    /* =========================
+       FUNERAL PROCESS
+    ========================= */
+
+    .process-section {
+      background: #eeeee8;
+    }
+
+    .process-list {
+      display: grid;
+      grid-template-columns: repeat(6, 1fr);
+      gap: 0;
+      border-top: 1px solid #d5d4cc;
+      border-bottom: 1px solid #d5d4cc;
+    }
+
+    .process-item {
+      position: relative;
+      padding: 28px 18px;
+      text-align: center;
+      border-right: 1px solid #d5d4cc;
+    }
+
+    .process-item:last-child {
+      border-right: 0;
+    }
+
+    .process-num {
+      font-size: 11px;
+      color: #a18e67;
+      margin-bottom: 10px;
+    }
+
+    .process-item h3 {
+      font-size: 15px;
+      margin-bottom: 7px;
+      color: #354239;
+    }
+
+    .process-item p {
+      font-size: 12px;
+      color: #777b75;
+    }
+
+    /* =========================
+       PRICE
+    ========================= */
+
+    .price-table {
+      width: 100%;
+      border-collapse: collapse;
+      background: #fff;
+      border-top: 2px solid #405247;
+    }
+
+    .price-table th,
+    .price-table td {
+      padding: 17px 20px;
+      border-bottom: 1px solid #e8e6df;
+      text-align: left;
+      font-size: 14px;
+    }
+
+    .price-table th {
+      background: #f2f1eb;
+      color: #48534b;
+      font-weight: 600;
+    }
+
+    .price-table td {
+      color: #686e68;
+    }
+
+    .price-note {
+      margin-top: 15px;
+      color: #8a8d87;
+      font-size: 12px;
+    }
+
+    /* =========================
+       FACILITY
+    ========================= */
+
+    .facility-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 14px;
+    }
+
+    .facility-card {
+      height: 240px;
+      position: relative;
+      overflow: hidden;
+      background: #deddd6;
+    }
+
+    .facility-card img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: 0.4s;
+    }
+
+    .facility-card:hover img {
+      transform: scale(1.04);
+    }
+
+    .facility-card.large {
+      grid-column: span 2;
+    }
+
+    .facility-caption {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      padding: 35px 20px 17px;
+      color: #fff;
+      background: linear-gradient(
+        transparent,
+        rgba(20, 27, 23, 0.7)
+      );
+      font-size: 14px;
+    }
+
+    /* =========================
+       INFORMATION
+    ========================= */
+
+    .info-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 16px;
+    }
+
+    .info-card {
+      background: #fff;
+      border: 1px solid #e7e4db;
+      padding: 28px;
+    }
+
+    .info-card h3 {
+      color: #354239;
+      font-size: 17px;
+      margin-bottom: 10px;
+    }
+
+    .info-card p {
+      color: #777c76;
+      font-size: 13px;
+      line-height: 1.85;
+    }
+
+    /* =========================
+       LOCATION
+    ========================= */
+
+    .location {
+      background: #e9ebe5;
+    }
+
+    .location-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 30px;
+      align-items: stretch;
+    }
+
+    .location-info {
+      background: #fff;
+      padding: 40px;
+    }
+
+    .location-info h3 {
+      font-size: 22px;
+      color: #344239;
+      margin-bottom: 24px;
+      font-weight: 600;
+    }
+
+    .location-row {
+      padding: 15px 0;
+      border-bottom: 1px solid #e9e7df;
+      display: grid;
+      grid-template-columns: 80px 1fr;
+      font-size: 14px;
+    }
+
+    .location-row strong {
+      color: #9a8c69;
+      font-weight: 500;
+    }
+
+    .location-row span {
+      color: #626862;
+    }
+
+    .map-box {
+      min-height: 360px;
+      background:
+        linear-gradient(
+          rgba(55, 65, 58, 0.08),
+          rgba(55, 65, 58, 0.08)
+        ),
+        #dfe1da;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #71776f;
+      text-align: center;
+      padding: 30px;
+    }
+
+    .map-box-inner {
+      border: 1px solid #c6c9c0;
+      background: rgba(255,255,255,0.65);
+      padding: 25px 35px;
+    }
+
+    .map-box strong {
+      display: block;
+      color: #4a554d;
+      margin-bottom: 5px;
+    }
+
+    /* =========================
+       FAQ
+    ========================= */
+
+    .faq-section {
+      background: #f8f7f2;
+    }
+
+    .faq-list {
+      border-top: 1px solid #cfcfc7;
+    }
+
+    .faq-item {
+      border-bottom: 1px solid #dcdad2;
+      background: #fff;
+    }
+
+    .faq-question {
+      width: 100%;
+      border: 0;
+      background: transparent;
+      padding: 22px 24px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      text-align: left;
+      cursor: pointer;
+      color: #354239;
+      font-size: 15px;
+      font-weight: 500;
+    }
+
+    .faq-question:hover {
+      background: #f7f6f1;
+    }
+
+    .faq-icon {
+      width: 25px;
+      height: 25px;
+      border: 1px solid #d3d0c6;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+      margin-left: 20px;
+      color: #897956;
+      font-size: 18px;
+      line-height: 1;
+      transition: 0.25s;
+    }
+
+    .faq-answer {
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.35s ease;
+      background: #faf9f5;
+    }
+
+    .faq-answer-inner {
+      padding: 0 24px 23px;
+      color: #777b75;
+      font-size: 14px;
+      line-height: 1.9;
+    }
+
+    .faq-item.active .faq-answer {
+      max-height: 300px;
+    }
+
+    .faq-item.active .faq-icon {
+      transform: rotate(45deg);
+      background: #4a594f;
+      color: #fff;
+      border-color: #4a594f;
+    }
+
+    /* =========================
+       CONTACT
+    ========================= */
+
+    .contact {
+      background: #2e3b33;
+      color: #fff;
+      text-align: center;
+    }
+
+    .contact .section-label {
+      color: #b7a980;
+    }
+
+    .contact .section-title {
+      color: #fff;
+    }
+
+    .contact-desc {
+      color: rgba(255,255,255,0.68);
+      font-size: 14px;
+      margin-bottom: 25px;
+    }
+
+    .phone {
+      font-size: 38px;
+      font-weight: 500;
+      letter-spacing: 1px;
+      margin-bottom: 25px;
+    }
+
+    .contact-buttons {
+      display: flex;
+      justify-content: center;
+      gap: 10px;
+    }
+
+    /* =========================
+       FOOTER
+    ========================= */
+
+    .footer {
+      background: #253029;
+      color: rgba(255,255,255,0.55);
+      padding: 35px 24px 90px;
+      font-size: 12px;
+    }
+
+    .footer-inner {
+      max-width: 1100px;
+      margin: 0 auto;
+    }
+
+    .footer-logo {
+      color: rgba(255,255,255,0.85);
+      font-size: 16px;
+      margin-bottom: 12px;
+    }
+
+    .footer p {
+      line-height: 1.8;
+    }
+
+    /* =========================
+       MOBILE BAR
+    ========================= */
+
+    .mobile-bar {
+      display: none;
+    }
+
+    /* =========================
+       RESPONSIVE
+    ========================= */
+
+    @media (max-width: 900px) {
+
+      .nav {
+        gap: 15px;
+      }
+
+      .nav a {
+        font-size: 12px;
+      }
+
+      .quick-inner {
+        max-width: calc(100% - 40px);
+      }
+
+      .service-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      .process-list {
+        grid-template-columns: repeat(3, 1fr);
+      }
+
+      .process-item:nth-child(3) {
+        border-right: 0;
+      }
+
+      .process-item:nth-child(-n+3) {
+        border-bottom: 1px solid #d5d4cc;
+      }
+
+      .facility-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      .info-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    @media (max-width: 680px) {
+
+      .header {
+        height: 64px;
+      }
+
+      .header-inner {
+        padding: 0 18px;
+      }
+
+      .logo {
+        font-size: 17px;
+      }
+
+      .nav {
+        display: none;
+      }
+
+      .hero {
+        margin-top: 64px;
+        min-height: 600px;
+      }
+
+      .hero-inner {
+        max-width: calc(100% - 40px);
+      }
+
+      .hero h1 {
+        font-size: 39px;
+        letter-spacing: -2px;
+      }
+
+      .hero-desc {
+        font-size: 14px;
+      }
+
+      .quick-menu {
+        margin-top: -25px;
+      }
+
+      .quick-inner {
+        max-width: calc(100% - 30px);
+        grid-template-columns: 1fr;
+      }
+
+      .quick-item {
+        padding: 18px 20px;
+        border-right: 0;
+        border-bottom: 1px solid #e9e7df;
+      }
+
+      .quick-item:last-child {
+        border-bottom: 0;
+      }
+
+      .section {
+        padding: 75px 20px;
+      }
+
+      .section-title {
+        font-size: 28px;
+      }
+
+      .service-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .process-list {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      .process-item:nth-child(3) {
+        border-right: 1px solid #d5d4cc;
+      }
+
+      .process-item:nth-child(2n) {
+        border-right: 0;
+      }
+
+      .process-item:nth-child(3),
+      .process-item:nth-child(4) {
+        border-bottom: 1px solid #d5d4cc;
+      }
+
+      .price-table {
+        font-size: 13px;
+      }
+
+      .price-table th,
+      .price-table td {
+        padding: 13px 10px;
+      }
+
+      .facility-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .facility-card.large {
+        grid-column: span 1;
+      }
+
+      .location-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .location-info {
+        padding: 28px 22px;
+      }
+
+      .map-box {
+        min-height: 260px;
+      }
+
+      .faq-question {
+        padding: 20px 16px;
+        font-size: 14px;
+      }
+
+      .faq-answer-inner {
+        padding: 0 16px 20px;
+        font-size: 13px;
+      }
+
+      .phone {
+        font-size: 30px;
+      }
+
+      .contact-buttons {
+        flex-direction: column;
+      }
+
+      .contact-buttons .btn {
+        width: 100%;
+      }
+
+      .mobile-bar {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 62px;
+        z-index: 2000;
+        box-shadow: 0 -4px 15px rgba(0,0,0,0.12);
+      }
+
+      .mobile-bar a {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 14px;
+      }
+
+      .mobile-call {
+        background: #35463b;
+        color: #fff;
+      }
+
+      .mobile-map {
+        background: #e8e3d4;
+        color: #344239;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- =========================
+       HEADER
+  ========================== -->
+
+  <header class="header">
+    <div class="header-inner">
+
+      <a href="#" class="logo">
+        대구 기독병원 장례식장
+    
+      </a>
+
+      <nav class="nav">
+        <a href="#guide">이용안내</a>
+        <a href="#facility">시설안내</a>
+        <a href="#funeral-info">장례정보</a>
+        <a href="#location">오시는 길</a>
+        <a href="#faq">자주 묻는 질문</a>
+      </nav>
+
+    </div>
+  </header>
+
+
+  <!-- =========================
+       HERO
+  ========================== -->
+
+  <section class="hero">
+
+    <div class="hero-inner">
+
+      <div class="hero-sub">
+        정성을 다하는 장례 서비스
+      </div>
+
+      <h1>
+        고인의 마지막 길을<br>
+        정성을 다해 모시겠습니다.
+      </h1>
+
+      <p class="hero-desc">
+        유가족의 마음을 헤아리고<br>
+        처음부터 마지막까지 정성을 다해 함께하겠습니다.
+      </p>
+
+      <div class="hero-buttons">
+        <a href="tel:0536274447" class="btn btn-main">
+          24시간 상담
+        </a>
+
+        <a href="#location" class="btn btn-dark">
+          오시는 길
+        </a>
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- =========================
+       QUICK MENU
+  ========================== -->
+
+  <section class="quick-menu">
+
+    <div class="quick-inner">
+
+      <a href="#guide" class="quick-item">
+        <div class="quick-label">GUIDE</div>
+        <div class="quick-title">장례 이용안내</div>
+      </a>
+
+      <a href="#price" class="quick-item">
+        <div class="quick-label">PRICE</div>
+        <div class="quick-title">이용요금 안내</div>
+      </a>
+
+      <a href="#location" class="quick-item">
+        <div class="quick-label">LOCATION</div>
+        <div class="quick-title">오시는 길</div>
+      </a>
+
+    </div>
+
+  </section>
+
+
+  <!-- =========================
+       SERVICE
+  ========================== -->
+
+  <section class="section" id="guide">
+
+    <div class="section-inner">
+
+      <div class="section-head">
+
+        <div class="section-label">
+          SERVICE
+        </div>
+
+        <h2 class="section-title">
+          장례 이용안내
+        </h2>
+
+        <p class="section-desc">
+          갑작스러운 상황에서도 차분하게 장례를 준비하실 수 있도록 안내해 드립니다.
+        </p>
+
+      </div>
+
+
+      <div class="service-grid">
+
+        <a href="#funeral-info" class="service-card">
+
+          <div class="service-number">01</div>
+
+          <h3>장례 절차</h3>
+
+          <p>
+            임종부터 발인까지<br>
+            장례의 전체 과정을 안내합니다.
+          </p>
+
+        </a>
+
+
+        <a href="#documents" class="service-card">
+
+          <div class="service-number">02</div>
+
+          <h3>서류 안내</h3>
+
+          <p>
+            장례 진행에 필요한<br>
+            주요 서류를 확인하실 수 있습니다.
+          </p>
+
+        </a>
+
+
+        <a href="#price" class="service-card">
+
+          <div class="service-number">03</div>
+
+          <h3>이용 요금</h3>
+
+          <p>
+            시설 및 장례식장 이용과 관련된<br>
+            요금을 안내합니다.
+          </p>
+
+        </a>
+
+
+        <a href="#products" class="service-card">
+
+          <div class="service-number">04</div>
+
+          <h3>장례용품</h3>
+
+          <p>
+            장례에 필요한 용품 및<br>
+            준비사항을 안내합니다.
+          </p>
+
+        </a>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- =========================
+       FUNERAL PROCESS
+  ========================== -->
+
+  <section class="section process-section" id="funeral-info">
+
+    <div class="section-inner">
+
+      <div class="section-head">
+
+        <div class="section-label">
+          FUNERAL PROCESS
+        </div>
+
+        <h2 class="section-title">
+          장례 절차
+        </h2>
+
+        <p class="section-desc">
+    
+        </p>
+
+      </div>
+
+
+      <div class="process-list">
+
+        <div class="process-item">
+          <div class="process-num">01</div>
+          <h3>임종</h3>
+          <p>임종 및 장례 상담</p>
+        </div>
+
+        <div class="process-item">
+          <div class="process-num">02</div>
+          <h3>운구</h3>
+          <p>고인 운구</p>
+        </div>
+
+        <div class="process-item">
+          <div class="process-num">03</div>
+          <h3>안치</h3>
+          <p>고인 안치</p>
+        </div>
+
+        <div class="process-item">
+          <div class="process-num">04</div>
+          <h3>빈소</h3>
+          <p>빈소 마련 및 조문</p>
+        </div>
+
+        <div class="process-item">
+          <div class="process-num">05</div>
+          <h3>입관</h3>
+          <p>입관 및 발인 준비</p>
+        </div>
+
+        <div class="process-item">
+          <div class="process-num">06</div>
+          <h3>발인</h3>
+          <p>발인 및 장지 이동</p>
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- =========================
+       PRICE
+  ========================== -->
+
+  <section class="section" id="price">
+
+    <div class="section-inner">
+
+      <div class="section-head">
+
+        <div class="section-label">
+          PRICE
+        </div>
+
+        <h2 class="section-title">
+          이용요금 안내
+        </h2>
+
+        <p class="section-desc">
+          실제 요금은 계약 및 이용 조건에 따라 달라질 수 있습니다.
+        </p>
+
+      </div>
+
+
+      <table class="price-table">
+
+        <thead>
+          <tr>
+            <th>구분</th>
+            <th>내용</th>
+            <th>요금</th>
+          </tr>
+        </thead>
+
+        <tbody>
+
+          <tr>
+            <td>빈소 이용료</td>
+            <td>빈소 규모 및 이용 시간에 따라 적용</td>
+            <td>문의</td>
+          </tr>
+
+          <tr>
+            <td>안치실</td>
+            <td>고인 안치 관련 이용료</td>
+            <td>문의</td>
+          </tr>
+
+          <tr>
+            <td>입관실</td>
+            <td>입관 진행에 필요한 시설 이용</td>
+            <td>문의</td>
+          </tr>
+
+          <tr>
+            <td>장례용품</td>
+            <td>수의, 관 등 장례용품</td>
+            <td>문의</td>
+          </tr>
+
+        </tbody>
+
+      </table>
+
+
+      <p class="price-note">
+
+      </p>
+
+    </div>
+
+  </section>
+
+
+  <!-- =========================
+       FACILITY
+  ========================== -->
+
+  <section class="section" id="facility">
+
+    <div class="section-inner">
+
+      <div class="section-head">
+
+        <div class="section-label">
+          FACILITY
+        </div>
+
+        <h2 class="section-title">
+          시설안내
+        </h2>
+
+        <p class="section-desc">
+          유가족과 조문객이 편안하게 이용하실 수 있는 공간을 제공합니다.
+        </p>
+
+      </div>
+
+
+      <div class="facility-grid">
+
+        <div class="facility-card large">
+          <img src="./images/facility1.jpg" alt="장례식장 시설">
+          <div class="facility-caption">장례식장 전경</div>
+        </div>
+
+        <div class="facility-card">
+          <img src="./images/facility2.jpg" alt="빈소">
+          <div class="facility-caption">빈소</div>
+        </div>
+
+        <div class="facility-card">
+          <img src="./images/facility3.jpg" alt="접객실">
+          <div class="facility-caption">접객 공간</div>
+        </div>
+
+        <div class="facility-card">
+          <img src="./images/facility4.jpg" alt="편의시설">
+          <div class="facility-caption">편의시설</div>
+        </div>
+
+        <div class="facility-card">
+          <img src="./images/facility5.jpg" alt="주차장">
+          <div class="facility-caption">주차 공간</div>
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- =========================
+       DOCUMENT / INFORMATION
+  ========================== -->
+
+  <section class="section" id="documents">
+
+    <div class="section-inner">
+
+      <div class="section-head">
+
+        <div class="section-label">
+          INFORMATION
+        </div>
+
+        <h2 class="section-title">
+          장례 준비 안내
+        </h2>
+
+        <p class="section-desc">
+          장례를 준비하시면서 미리 확인하시면 좋은 내용을 안내해 드립니다.
+        </p>
+
+      </div>
+
+
+      <div class="info-grid">
+
+        <div class="info-card">
+
+          <h3>사망진단서</h3>
+
+          <p>
+            장례 진행 및 각종 행정 절차에 필요한
+            사망진단서 또는 시체검안서를 준비해 주세요.
+          </p>
+
+        </div>
+
+
+        <div class="info-card">
+
+          <h3>신분증 및 가족관계 확인</h3>
+
+          <p>
+            장례 절차 진행을 위해
+            고인 및 유가족 관련 신분 확인 서류가 필요할 수 있습니다.
+          </p>
+
+        </div>
+
+
+        <div class="info-card" id="products">
+
+          <h3>장례용품 준비</h3>
+
+          <p>
+            수의, 관, 유골함 등 필요한 장례용품은
+            상담을 통해 준비하실 수 있습니다.
+          </p>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- =========================
+       LOCATION
+  ========================== -->
+
+  <section class="section location" id="location">
+
+    <div class="section-inner">
+
+      <div class="section-head">
+
+        <div class="section-label">
+          LOCATION
+        </div>
+
+        <h2 class="section-title">
+          오시는 길
+        </h2>
+
+        <p class="section-desc">
+          장례식장 위치와 주차 및 문의 정보를 확인하실 수 있습니다.
+        </p>
+
+      </div>
+
+
+      <div class="location-grid">
+
+
+        <div class="location-info">
+
+          <h3>장례식장 안내</h3>
+
+
+          <div class="location-row">
+            <strong>주소</strong>
+            <span>
+              대구광역시 달서구 달구벌대로 1750
+            </span>
+          </div>
+
+
+          <div class="location-row">
+            <strong>대표전화</strong>
+            <span>
+              053-627-4447
+            </span>
+          </div>
+
+
+          <div class="location-row">
+            <strong>상담</strong>
+            <span>
+              24시간 장례 상담 가능
+            </span>
+          </div>
+
+
+          <div class="location-row">
+            <strong>주차</strong>
+            <span>
+              장례식장 내 주차장 이용
+            </span>
+          </div>
+
+
+          <div style="margin-top:25px;">
+
+            <a
+              href="https://map.kakao.com/"
+              target="_blank"
+              class="btn btn-main"
+            >
+              카카오맵으로 길찾기
+            </a>
+
+          </div>
+
+        </div>
+
+
+        <div class="map-box">
+
+          <div class="map-box-inner">
+
+            <strong>장례식장 위치</strong>
+
+            <span>
+              대구광역시 달서구 달구벌대로 1750
+            </span>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- =========================
+       FAQ
+       오시는 길 다음
+  ========================== -->
+
+  <section class="section faq-section" id="faq">
+
+    <div class="section-inner">
+
+      <div class="section-head">
+
+        <div class="section-label">
+          FAQ
+        </div>
+
+        <h2 class="section-title">
+          자주 묻는 질문
+        </h2>
+
+        <p class="section-desc">
+          장례식장 이용과 관련하여 자주 문의하시는 내용을 안내해 드립니다.
+        </p>
+
+      </div>
+
+
+      <div class="faq-list">
+
+
+        <!-- FAQ 01 -->
+
+        <div class="faq-item">
+
+          <button class="faq-question" type="button">
+
+            <span>
+              장례식장 이용은 어떻게 신청하나요?
+            </span>
+
+            <span class="faq-icon">+</span>
+
+          </button>
+
+          <div class="faq-answer">
+
+            <div class="faq-answer-inner">
+
+              장례식장으로 전화 또는 방문 상담을 통해
+              이용 신청을 하실 수 있습니다.
+              갑작스럽게 장례를 준비하시는 경우에도
+              24시간 상담이 가능합니다.
+
+            </div>
+
+          </div>
+
+        </div>
+
+
+        <!-- FAQ 02 -->
+
+        <div class="faq-item">
+
+          <button class="faq-question" type="button">
+
+            <span>
+              장례식장에 방문할 때 주차가 가능한가요?
+            </span>
+
+            <span class="faq-icon">+</span>
+
+          </button>
+
+          <div class="faq-answer">
+
+            <div class="faq-answer-inner">
+
+              장례식장 내 주차장을 이용하실 수 있습니다.
+              주차 공간 및 이용 방법은 현장 안내에 따라
+              이용해 주시기 바랍니다.
+
+            </div>
+
+          </div>
+
+        </div>
+
+
+        <!-- FAQ 03 -->
+
+        <div class="faq-item">
+
+          <button class="faq-question" type="button">
+
+            <span>
+              장례식장 이용 시 어떤 서류가 필요한가요?
+            </span>
+
+            <span class="faq-icon">+</span>
+
+          </button>
+
+          <div class="faq-answer">
+
+            <div class="faq-answer-inner">
+
+              일반적으로 사망진단서 또는 시체검안서가 필요하며,
+              장례 진행 상황에 따라 추가 서류가 필요할 수 있습니다.
+              정확한 준비 서류는 상담 시 안내받으실 수 있습니다.
+
+            </div>
+
+          </div>
+
+        </div>
+
+
+        <!-- FAQ 04 -->
+
+        <div class="faq-item">
+
+          <button class="faq-question" type="button">
+
+            <span>
+              장례용품은 직접 준비해야 하나요?
+            </span>
+
+            <span class="faq-icon">+</span>
+
+          </button>
+
+          <div class="faq-answer">
+
+            <div class="faq-answer-inner">
+
+              장례에 필요한 수의, 관, 유골함 등의 용품은
+              장례식장 상담을 통해 준비하실 수 있습니다.
+              필요한 품목과 비용은 상담 시 자세하게 안내해 드립니다.
+
+            </div>
+
+          </div>
+
+        </div>
+
+
+        <!-- FAQ 05 -->
+
+        <div class="faq-item">
+
+          <button class="faq-question" type="button">
+
+            <span>
+              조문객은 언제 방문하면 되나요?
+            </span>
+
+            <span class="faq-icon">+</span>
+
+          </button>
+
+          <div class="faq-answer">
+
+            <div class="faq-answer-inner">
+
+              빈소가 마련된 이후 조문이 가능합니다.
+              정확한 조문 가능 시간은 유가족의 장례 일정에 따라
+              달라질 수 있으므로 방문 전에 확인해 주시기 바랍니다.
+
+            </div>
+
+          </div>
+
+        </div>
+
+
+        <!-- FAQ 06 -->
+
+        <div class="faq-item">
+
+          <button class="faq-question" type="button">
+
+            <span>
+              장례 절차가 처음이라 무엇부터 해야 할지 모르겠습니다.
+            </span>
+
+            <span class="faq-icon">+</span>
+
+          </button>
+
+          <div class="faq-answer">
+
+            <div class="faq-answer-inner">
+
+              걱정하지 않으셔도 됩니다.
+              장례 상담을 통해 현재 상황에 맞는 절차를
+              처음부터 차근차근 안내해 드립니다.
+              궁금하신 사항은 언제든지 전화로 문의해 주세요.
+
+            </div>
+
+          </div>
+
+        </div>
+
+
+        <!-- FAQ 07 -->
+
+        <div class="faq-item">
+
+          <button class="faq-question" type="button">
+
+            <span>
+              24시간 상담이 가능한가요?
+            </span>
+
+            <span class="faq-icon">+</span>
+
+          </button>
+
+          <div class="faq-answer">
+
+            <div class="faq-answer-inner">
+
+              네. 장례와 관련된 상담은 24시간 가능합니다.
+              갑작스러운 상황에서도 편하게 연락해 주시면
+              필요한 절차를 안내해 드립니다.
+
+            </div>
+
+          </div>
+
+        </div>
+
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- =========================
+       CONTACT
+  ========================== -->
+
+  <section class="section contact">
+
+    <div class="section-inner">
+
+      <div class="section-label">
+        CONTACT
+      </div>
+
+      <h2 class="section-title">
+        언제든 편하게 문의해 주세요.
+      </h2>
+
+      <p class="contact-desc">
+        장례 절차와 시설 이용에 대해 궁금한 점이 있으시면
+        전화로 상담받으실 수 있습니다.
+      </p>
+
+      <div class="phone">
+        053-627-4447
+      </div>
+
+      <div class="contact-buttons">
+
+        <a
+          href="tel:0536274447"
+          class="btn btn-main"
+        >
+          전화 상담하기
+        </a>
+
+        <a
+          href="#faq"
+          class="btn btn-dark"
+        >
+          자주 묻는 질문
+        </a>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- =========================
+       FOOTER
+  ========================== -->
+
+  <footer class="footer">
+
+    <div class="footer-inner">
+
+      <div class="footer-logo">
+        장례식장
+      </div>
+
+      <p>
+        대구광역시 달서구 달구벌대로 1750
+      </p>
+
+      <p>
+        대표전화 : 053-627-4447
+      </p>
+
+      <p>
+        24시간 장례 상담
+      </p>
+
+      <p style="margin-top:15px;">
+        © 2026. All rights reserved.
+      </p>
+
+    </div>
+
+  </footer>
+
+
+  <!-- =========================
+       MOBILE BOTTOM BAR
+  ========================== -->
+
+  <div class="mobile-bar">
+
+    <a
+      href="tel:0536274447"
+      class="mobile-call"
+    >
+      ☎ 24시간 상담
+    </a>
+
+    <a
+      href="#location"
+      class="mobile-map"
+    >
+      📍 오시는 길
+    </a>
+
+  </div>
+
+
+  <!-- =========================
+       FAQ JAVASCRIPT
+  ========================== -->
+
+  <script>
+
+    const faqItems = document.querySelectorAll(".faq-item");
+
+    faqItems.forEach(function(item) {
+
+      const question = item.querySelector(".faq-question");
+
+      question.addEventListener("click", function() {
+
+        const isActive = item.classList.contains("active");
+
+        // 다른 FAQ 닫기
+        faqItems.forEach(function(otherItem) {
+          otherItem.classList.remove("active");
+        });
+
+        // 현재 FAQ 열기
+        if (!isActive) {
+          item.classList.add("active");
+        }
+
+      });
+
+    });
+
+  </script>
+
+</body>
+</html>
+```
